@@ -1,0 +1,19 @@
+# Node (Frontend)
+node_modules/
+build/
+.env
+
+# Python (Backend)
+__pycache__/
+venv/
+.env
+
+# System
+.DS_Store
+*.log
+*.sqlite3
+*.pyc
+
+# IDEs
+.vscode/
+.idea/
