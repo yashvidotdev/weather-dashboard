@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './styles/App.css';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 
-const API_BASE = 'http://localhost:8000';
+const API_BASE = process.env.REACT_APP_API_BASE_URL || 'http://localhost:8000';
 
 export default function App() {
   const [city, setCity] = useState('');
@@ -72,7 +72,7 @@ export default function App() {
   };
 
   const extractCityOnly = (fullString) => {
-    return fullString.split(',')[0].trim(); // e.g., "Goa Island, Goa, IN" => "Goa Island"
+    return fullString.split(',')[0].trim(); 
   };
 
   const fetchWeather = async (selectedCity) => {
@@ -149,7 +149,6 @@ export default function App() {
             ))}
           </div>
 
-          {/* 📊 Chart added below forecast */}
           <div className="chart-section">
             <h3>Temperature Forecast</h3>
             <ResponsiveContainer width="100%" height={250}>

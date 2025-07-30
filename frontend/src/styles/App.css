@@ -1,4 +1,3 @@
-/* Reset & Base */
 * {
   margin: 0;
   padding: 0;
@@ -26,13 +25,11 @@ body {
   animation: fadeIn 0.5s ease;
 }
 
-/* Title */
 h1 {
   font-size: 2rem;
   margin-bottom: 20px;
 }
 
-/* Search Bar */
 .search {
   display: flex;
   flex-direction: column;
@@ -69,7 +66,6 @@ h1 {
   background-color: #2563eb;
 }
 
-/* Autocomplete Suggestions */
 .suggestions {
   position: absolute;
   top: 100%;
@@ -94,7 +90,6 @@ h1 {
   background-color: #f0f4ff;
 }
 
-/* Recent History */
 .history {
   margin: 15px 0;
   text-align: left;
@@ -124,13 +119,11 @@ h1 {
   background-color: #bae6fd;
 }
 
-/* Error */
 .error {
   color: red;
   margin: 10px 0;
 }
 
-/* Weather Card */
 .weather-card {
   padding: 20px;
   border-radius: 16px;
@@ -177,7 +170,6 @@ h1 {
   transform: scale(1.05);
 }
 
-/* 📊 Chart Dashboard */
 .chart-section {
   margin-top: 25px;
   text-align: left;
@@ -189,7 +181,6 @@ h1 {
   color: #1e3a8a;
 }
 
-/* Fade In Animation */
 @keyframes fadeIn {
   from {
     opacity: 0;
